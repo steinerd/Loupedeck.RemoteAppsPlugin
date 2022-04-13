@@ -35,12 +35,9 @@
                 PluginDynamicFolder.NavigateUpActionName,
             };
 
-            if (RemoteAppsPlugin.CurrentRemoteApps.Count() > 0)
-            {
-                return systemButtons.Concat(RemoteAppsPlugin.CurrentRemoteApps.Select(s => this.CreateCommandName(s.Name)));
-            }
-
-            return systemButtons.Concat(new[] { this.CreateCommandName("Nothing\nFound") });
+            return RemoteAppsPlugin.CurrentRemoteApps.Count() > 0
+                ? systemButtons.Concat(RemoteAppsPlugin.CurrentRemoteApps.Select(s => this.CreateCommandName(s.Name)))
+                : systemButtons.Concat(new[] { this.CreateCommandName("Nothing\nFound") });
         }
 
         public override BitmapImage GetCommandImage(String actionParameter, PluginImageSize imageSize)

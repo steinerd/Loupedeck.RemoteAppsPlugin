@@ -1,0 +1,14 @@
+type: plugin4
+name: RemoteApps
+displayName: RemoteApps
+version: 1.0.0
+author: Steinerd.com
+copyright: Copyright (c) 2022 Anthony Steiner
+
+supportedDevices:
+  - LoupedeckCt
+  - LoupedeckLive
+
+pluginFileName: RemoteAppsPlugin.dll
+pluginFolderWin: ./bin/win/
+pluginFolderMac: ./bin/mac/
