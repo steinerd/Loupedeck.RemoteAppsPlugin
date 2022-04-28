@@ -10,5 +10,9 @@ supportedDevices:
   - LoupedeckLive
 
 pluginFileName: RemoteAppsPlugin.dll
-pluginFolderWin: ./bin/win/
-pluginFolderMac: ./bin/mac/
+pluginFolderWin: ./bin/
+
+license: MIT
+licenseUrl: https://opensource.org/licenses/MIT
+homePageUrl: https://github.com/Steinerd/Loupedeck.RemoteAppsPlugin
+supportPageUrl: https://github.com/Steinerd/Loupedeck.RemoteAppsPlugin/issues
